@@ -1,2 +1,0 @@
-adhocracy.ypart_theme
-=====================
