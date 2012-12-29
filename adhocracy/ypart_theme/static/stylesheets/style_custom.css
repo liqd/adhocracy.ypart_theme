@@ -67,19 +67,23 @@ a.show_comments:hover, a.new_comment:hover, a.participate,
 .vote_down:active, .vote_down.active {
   background-image: url('/static_theme/static/images/sprite_buttons_small.png');
 }
+a.button_small,
+a.show_comments:hover, a.new_comment:hover, a.participate {
+  color: #333;
+}
 .vote, .vote.big, .follow_paper, .button_small, a.button, .submit input, submit button {
   /* Naive border solution for now */
   border: 1px solid #c1c1c1;
 }
-a.button_small, a.button, .submit input, submit button {
-  color: #333;
+a.button, .submit input, submit button {
+  color: #fff;
 }
 .vote_up, .vote_down {
   background: url('/static_theme/static/images/sprite_buttons_small.png') repeat-x 0 -450px;
 }
 a.button, .submit input, submit button {
   background-image: url('/static_theme/static/images/sprite_buttons.png');
-  color: #333;
+  color: #fff;
   height: 25px;
   line-height: 25px;
 }
@@ -91,7 +95,7 @@ a.follow_paper,
   background-image: url("/static_theme/static/images/sprite_buttons.png") !important;
 }
 .submit input, .submit button {
-  color: #333;
+  color: #fff;
   border: 1px solid #c1c1c1;
 }
 
@@ -104,7 +108,7 @@ a.follow_paper,
 .pager .current, .pager a:active, .pager a:hover {
   border: 1px solid #c1c1c1;
   background-image: url('/static_theme/static/images/sprite_buttons.png');
-  color: #333;
+  color: #fff;
 }
 .pager a {
   color: #3b893d;
