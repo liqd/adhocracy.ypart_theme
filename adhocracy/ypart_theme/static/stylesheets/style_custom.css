@@ -279,3 +279,6 @@ img {
 #content-startpage .register {
   text-align:left;
 }
+#content-top {
+  height: auto !important;
+}
