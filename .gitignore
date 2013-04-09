@@ -1,5 +1,12 @@
 *.py[cod]
 
+# backup files
+*~
+.*~
+
+# vim swap files
+.*swp
+
 # C extensions
 *.so
 
