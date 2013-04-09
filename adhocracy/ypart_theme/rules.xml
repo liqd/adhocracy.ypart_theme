@@ -151,5 +151,73 @@
     <!--Fix links-->
     <replace content="//a[contains(@href, '/static/about.html')]/attribute::href" ><xsl:attribute name="href">/_pages/ueber_uns/das-projekt</xsl:attribute></replace>
 
+    <!-- Footer -->
+    <replace css:content="footer">
+      
+        <footer>
+            <div id="footer">
+                <div class="page_margins">
+                    <div class="page_wrapper">
+                        <div id="footer_line">
+                            <div id="second_footer_line" class="subcolumns" role="complementary">
+                                <div class="c33l footer_content">
+                                    <ul><li><a class="staticlink_about" href="/_pages/ueber_uns/das-projekt">
+                                                Wie funktioniert Adhocracy?
+                                        </a></li>
+                                        <li><a class="staticlink_codex" href="/_pages/codex">
+                                                Verhaltenscodex
+                                        </a></li>
+                                        <li><a class="staticlink_terms" href="/_pages/terms">
+                                                Nutzungsbedingungen
+                                        </a></li>
+
+                                        <li><a class="staticlink_privacy" href="/_pages/privacy">
+                                                Datenschutz
+                                        </a></li>
+                                        <li><a class="staticlink_imprint" href="/_pages/imprint">
+                                                Impressum
+                                        </a></li>
+                                </ul></div>
+                                <div class="c33l footer_content">
+                                    <div class="subcr">
+                                        <div class="footer_box">
+                                            <div class="subcolumns">
+                                                <h3>Diese Plattform wird betrieben von</h3>
+                                                <p><a id="link_footer_logo" title="Liquid Democracy e.V." href="http://liqd.net/">
+                                                        <img alt="Liqd e.V." src="/static_theme/static/images/liqd_logo_footer.png" />
+                                                </a></p>
+                                                <h3>Diese Plattform wird betrieben mit</h3>
+                                                <p><a href="https://github.com/liqd/adhocracy/" title="AdhocracyCode" id="link_footer_logo"><img src="/images/logo_adhocracy_code_footer.png" alt="AdhocracyCode" /></a></p>
+                                                <p>
+                                                    <a href="http://creativecommons.org/licenses/by/3.0/de/" rel="license"><img src="/images/80x15.png" alt="Creative Commons License" /></a>
+                                                    <a href="http://www.opendefinition.org/" rel="license"><img src="/images/oc_80x15_blue.png" alt="Open Definition" /></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c33r footer_content">
+                                    <div class="subcr">
+                                        <div class="footer_box">
+                                            <div class="subcolumns">
+                                                <h3>In Kooperation mit</h3>
+                                                <p><a href="http://www.ijab.de" title="Fachstelle für Internationale Jugendarbeit der Bundesrepublik Deutschland e.V." id="link_footer_ijab"><img src="/static_theme/static/images/ijab-web.gif" alt="IJAB" /></a>
+                                                <a href="http://www.ijab.de/aktivitaeten/internationale-zusammenarbeit/epartizipation-youthpart/" title="youthpart" id="link_footer_youthpart"><img src="/static_theme/static/images/youthpart2.jpg" alt="youthpart" /></a></p>
+                                                <h3>Gefördert von</h3>
+                                                <p><a href="http://www.bmfsfj.de" title="Bundesministerium für Familie, Senioren, Frauen und Jugend" id="link_footer_bmfsfj"><img src="/static_theme/static/images/BMFSFJ-Logo-Farbe_4C_M_2.png" alt="BMFSFJ" /></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </replace>
+
   </rules>
 </rules>
