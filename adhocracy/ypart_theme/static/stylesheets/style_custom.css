@@ -197,6 +197,9 @@ body.compact #nav li,
 body.compact #nav li a {
   height: 24px;
 }
+#nav ul.children li, #nav ul.children li a {
+  height: initial;
+}
 
 #current_logo,
 #user_menu {

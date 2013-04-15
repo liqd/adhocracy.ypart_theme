@@ -86,16 +86,28 @@
 
     <!--Navigation - engagieren-->
     <replace css:content="li#nav_dummy > a">
-        <a href="/_pages/mitarbeiten" title="Mitarbeiten">Mitarbeiten</a>
+        <a href="/_pages/aktiv-werden/" title="Aktiv werden">Aktiv werden</a>
         <ul class="children">
             <li class="page_item">
-              <a href="/_pages/mitarbeiten/engagieren_und_mitentwickeln" title="Engagieren /  Mitentwickeln">Engagieren / Mitentwickeln</a>
+              <a href="https://ypart.eu/_pages/aktiv-werden/jugendringe-und-jugendverbaende/" title="Jugendringe und Jugendverbände">Jugendringe und Jugendverbände</a>
             </li>
             <li class="page_item">
-              <a href="/_pages/mitarbeiten/spenden_und_foerden" title="Spenden und fördern">Spenden und fördern</a>
+              <a href="https://ypart.eu/_pages/aktiv-werden/jugendparlamente-jugendrate-und-jugendforen/" title="Jugendparlamente, Jugendräte und Jugendforen">Jugendparlamente, Jugendräte und Jugendforen</a>
             </li>
             <li class="page_item">
-              <a href="/_pages/mitarbeiten/github" title="Github">Github</a>
+                <a href="https://ypart.eu/_pages/aktiv-werden/jugendvereine/" title="Jugendvereine, Jugendzentren und Jugendinitiativen">Jugendvereine, Jugendzentren und Jugendinitiativen</a>
+            </li>
+            <li class="page_item">
+                <a href="https://ypart.eu/_pages/aktiv-werden/gemeinde-stadt-und-landrate/" title="Gemeinde-, Stadt- und Landräte">Gemeinde-, Stadt- und Landräte</a>
+            </li>
+            <li class="page_item">
+                <a href="https://ypart.eu/_pages/aktiv-werden/jugendamt-und-jugendhilfeausschuss/" title="Jugendämter und Jugendhilfeausschüsse">Jugendämter und Jugendhilfeausschüsse</a>
+            </li>
+            <li class="page_item">
+                <a href="https://ypart.eu/_pages/aktiv-werden/schulen-und-bildungseinrichtungen/" title="Schulen und Bildungseinrichtungen">Schulen und Bildungseinrichtungen</a>
+            </li>
+            <li class="page_item">
+                <a href="https://ypart.eu/_pages/aktiv-werden/unis-und-fachhochschulen/" title="Universitäten und Fachhochschulen">Universitäten und Fachhochschulen</a>
             </li>
          </ul>
     </replace>
