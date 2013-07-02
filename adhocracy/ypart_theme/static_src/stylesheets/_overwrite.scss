@@ -38,16 +38,13 @@ height: 90px;
 #subnav li:hover {
 background-image: url('/static_theme/static/images/sprite_tab_navigation.png');
 }
-#nav li.current {
+#nav .hlist > ul > li.current {
   background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
 }
 #nav ul.children {
   background-image: url('/static_theme/static/images/gradient_navi_dropdown.png');
 }
-#nav ul.children li {
-  background-image: url('/static_theme/static/images/line_navi_dropdown.png');
-}
-#nav li:hover {
+#nav .hlist > ul > li:hover {
   background-image: url('/static_theme/static/images/gradient_navi_hover.png');
 }
 .menu.hlist {
@@ -181,8 +178,6 @@ li.content_box h3, li.content_box .meta {
 }
 li.content_box:nth-child(2n+2) {
   background: #f7f6f4;
-  border-bottom: 1px dotted #CCC;
-  border-top: 1px dotted #CCC;
 }
 .tooltip {
   background: #fffde4;
@@ -190,20 +185,15 @@ li.content_box:nth-child(2n+2) {
 
 /*Main navigation*/
 
-#nav li {
+#nav .hlist > ul > li {
   padding-top: 7px; /*make drop down menus work*/
 }
-body.compact #nav li,
-body.compact #nav li a {
+body.compact #nav .hlist > ul > li,
+body.compact #nav .hlist > ul > li a {
   height: 24px;
 }
-#nav ul.children li, #nav ul.children li a {
-  height: initial;
-}
-
-#current_logo,
-#user_menu {
-  background-image: url('/static_theme/static/images/line_header.png');
+#nav .hlist ul.children > li, #nav .hlist ul.children > li a {
+  height: initial !important;
 }
 
  /*Wordpress pages sidebar*/
