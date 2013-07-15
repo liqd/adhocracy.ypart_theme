@@ -9,12 +9,6 @@
 ******************************************************/
 
 /* Font */
-h1, h2, h3, h4, h5, a, legend, .tabnav li a.active, .tabnav li a:hover  {
-    color: #134d7f;
-}
-a {
-    color: #134d7f;
-}
 label {
     font-weight: normal;
 }
@@ -55,15 +49,10 @@ label {
 }
 
 .register a.button {
-    background-position: 0 -200px;
     border: 1px solid #3e753e;
     font-size: 125%;
     line-height: 33px;
-    height: 35px;
     padding-right: 18px;
-}
-.register a:hover.button {
-    background-position: 0 -250px;
 }
 
     /* Search */
@@ -75,27 +64,7 @@ label {
     border-color: #c2c2c2;
 }
 
-    /* Sprite icons overrides (close button mainly */
-
-.info_box .close_button, .overlay a.close,
-    .vote_up span, .vote_down span,
-    .vote.big .vote_up span,
-    .vote.big .vote_down span,
-    a.show_comments:after, a.new_comment:after
-{
-    background-image: url('/static_theme/static/images/sprite_icons.png');
-}
-
-
-
 /* Background */
-
-#header {
-    background-image: url('/static_theme/static/images/gradient_header.png');
-}
-#subheader {
-    background-image: url('/static_theme/static/images/tabs_bg_large.png');
-}
 .comment_form {
     background-color: #fff;
 }
@@ -117,9 +86,6 @@ li.content_box h3, li.content_box .meta {
 }
 li.content_box:nth-child(2n+2) {
     background: #f7f6f4;
-}
-.tooltip {
-    background: #fffde4;
 }
 
 /*Main navigation*/
@@ -148,18 +114,6 @@ body.compact #nav .hlist > ul > li a {
     padding-top: 20px;
 }
 
-/* override bootstrap stuff */
-h1, h2, h3, h4, h5, h6 {
-    margin-top: auto;
-}
-img {
-    height: none; /*ugly hack to unset hight -joka */
-}
-
-/*footer*/
-.c33l, .c33r {
-    width: 32.333%;
-}
 #footer,
 #footer_line,
 #footer .page_wrapper,
