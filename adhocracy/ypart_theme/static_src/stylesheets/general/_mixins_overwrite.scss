@@ -1,0 +1,28 @@
+@mixin button-round-background() {
+    background-color: #fff;
+    @include background-image(linear-gradient(to top, darken(#fff, 4%), #fff));
+    border: 1px solid $border;
+    &:hover {
+        background-color: darken(#fff, 2%);
+        @include background-image(linear-gradient(to top, darken(#fff, 6%), darken(#fff, 2%)));
+    }
+}
+
+@mixin button-small($color1, $color2) {
+    @include button-base;
+    line-height: 14px !important;
+    @include border-radius(7px);
+    padding: 0 10px;
+    font-size: 11px;
+
+    color: $black;
+    @include button-round-background();
+    &:active, &.active {
+        @include background-image(linear-gradient(to bottom, darken(#fff, 10%), #fff));
+        @include box-shadow(1px 1px 2px #333 inset);
+    }
+    .inactive & {
+        background: $bg2 !important;
+        @include box-shadow(none);
+    }
+}

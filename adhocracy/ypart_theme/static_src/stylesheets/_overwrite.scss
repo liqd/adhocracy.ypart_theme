@@ -25,19 +25,6 @@ label {
 }
 
 /* Navigation */
-
-#subnav li, #subnav li.current {
-    background-image: url('/static_theme/static/images/sprite_tab_navigation.png');
-}
-#subnav li a {
-    color: #838383;
-}
-#subnav li.current a, #subnav li a:hover {
-    color: #333;
-}
-#subnav li:hover {
-background-image: url('/static_theme/static/images/sprite_tab_navigation.png');
-}
 #nav .hlist > ul > li.current {
     background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
 }
@@ -49,40 +36,18 @@ background-image: url('/static_theme/static/images/sprite_tab_navigation.png');
 }
 .menu.hlist {
     padding-top: 8px;
+#subnav {
+    li {
+        a {
+            background: none;
+            color: $fg1;
+        }
+    }
+    li a:hover, li.current a, li.current a:hover {
+        background: white;
+        color: $black;
+    }
 }
-/* Button border, background, color */
-a.button_small,
-a.show_comments:hover, a.new_comment:hover, a.participate,
-.vote, .vote.big, .vote_count, .button_small, .vote_up, .vote_down, .vote_,
-.vote.big .vote_down:active, .vote.big .vote_down.active,
-.vote.big .vote_down:hover,
-.vote.big .vote_up:active, .vote.big .vote_up.active,
-.vote.big .vote_up:hover,
-.vote_up:hover,
-.vote_up:active, .vote_up.active,
-.vote_down:hover,
-.vote_down:active, .vote_down.active {
-    background-image: url('/static_theme/static/images/sprite_buttons_small.png');
-}
-a.button_small,
-a.show_comments:hover, a.new_comment:hover, a.participate {
-    color: #333;
-}
-.vote, .vote.big, .follow_paper, .button_small, a.button, .submit input, submit button {
-    /* Naive border solution for now */
-    border: 1px solid #c1c1c1;
-}
-a.button, .submit input, submit button {
-    color: #fff;
-}
-.vote_up, .vote_down {
-    background: url('/static_theme/static/images/sprite_buttons_small.png') repeat-x 0 -450px;
-}
-a.button, .submit input, submit button {
-    background-image: url('/static_theme/static/images/sprite_buttons.png');
-    color: #fff;
-    height: 25px;
-    line-height: 25px;
 }
 
 .register {
