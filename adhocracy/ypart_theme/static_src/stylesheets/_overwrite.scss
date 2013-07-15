@@ -42,6 +42,17 @@ label {
         color: $black;
     }
 }
+
+#col1 .content_list > li {
+    padding-left: 11px;
+    padding-right: 11px;
+
+    &:nth-child(odd) {
+        background: none;
+    }
+    &:nth-child(even) {
+        background: $bg1;
+    }
 }
 
 .register {
@@ -71,21 +82,6 @@ label {
 .comments_list li {
     background-color: #f7f6f4;
     border-top: 4px solid white !important;
-}
-
-.content_list {
-/* disturbed on proposal list, needed somewhere else? */
-/*  background: #f7f6f4; */
-    margin-bottom: 22px;
-}
-li.content_box {
-    background: #fff;
-}
-li.content_box h3, li.content_box .meta {
-    padding: 0 11px;
-}
-li.content_box:nth-child(2n+2) {
-    background: #f7f6f4;
 }
 
 /*Main navigation*/
