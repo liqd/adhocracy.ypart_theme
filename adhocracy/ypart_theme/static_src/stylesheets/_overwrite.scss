@@ -19,17 +19,6 @@ label {
 }
 
 /* Navigation */
-#nav .hlist > ul > li.current {
-    background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
-}
-#nav ul.children {
-    background-image: url('/static_theme/static/images/gradient_navi_dropdown.png');
-}
-#nav .hlist > ul > li:hover {
-    background-image: url('/static_theme/static/images/gradient_navi_hover.png');
-}
-.menu.hlist {
-    padding-top: 8px;
 #subnav {
     li {
         a {
@@ -82,19 +71,6 @@ label {
 .comments_list li {
     background-color: #f7f6f4;
     border-top: 4px solid white !important;
-}
-
-/*Main navigation*/
-
-#nav .hlist > ul > li {
-    padding-top: 7px; /*make drop down menus work*/
-}
-body.compact #nav .hlist > ul > li,
-body.compact #nav .hlist > ul > li a {
-    height: 24px;
-}
-#nav .hlist ul.children > li, #nav .hlist ul.children > li a {
-    height: initial !important;
 }
 
 /*Wordpress pages sidebar*/
