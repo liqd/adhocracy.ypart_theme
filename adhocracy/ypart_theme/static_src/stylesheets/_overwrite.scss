@@ -104,9 +104,14 @@ label {
     border-right: 1px dotted #c5c5c5;
     margin-right: 10px;
 }
-#footer, .footer_content h3, .footer_content a {
-    color: #134d7f;
+.footer_content h3, .footer_content a {
+    color: $primary-color;
+}
+.footer_content a {
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #link_footer_ijab img, #link_footer_youthpart img {
