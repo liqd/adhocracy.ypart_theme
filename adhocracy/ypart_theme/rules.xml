@@ -166,8 +166,14 @@
                         <div id="footer_line">
                             <div id="second_footer_line" class="subcolumns" role="complementary">
                                 <div class="c33l footer_content">
-                                    <ul><li><a class="staticlink_about" href="/_pages/ueber_uns/das-projekt">
+                                    <ul><li><a class="staticlink_about" href="/static/about_ypart.html">
+                                                Über Ypart
+                                        </a></li>
+                                        <li><a href="/static/about_adhocracy">
                                                 Wie funktioniert Adhocracy?
+                                        </a></li>
+                                        <li><a href="/static/support">
+                                                Hilfe
                                         </a></li>
                                         <li><a class="staticlink_codex" href="/_pages/codex">
                                                 Verhaltenscodex
