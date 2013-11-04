@@ -67,15 +67,6 @@ label {
     border-color: #c2c2c2;
 }
 
-/* Background */
-.comment_form {
-    background-color: #fff;
-}
-.comments_list li {
-    background-color: #f7f6f4;
-    border-top: 4px solid white !important;
-}
-
 /*Wordpress pages sidebar*/
 
 #main .widget-area .shailan_SubpagesWidget,
@@ -156,4 +147,8 @@ a.participate {
 // center event pager icons
 #col1 ul.content_list.events_pager > li:before {
     left: 9px;
+}
+
+a.new_comment {
+    color: $black;
 }
