@@ -152,3 +152,8 @@ label {
 a.participate {
     color: $black;
 }
+
+// center event pager icons
+#col1 ul.content_list.events_pager > li:before {
+    left: 9px;
+}
