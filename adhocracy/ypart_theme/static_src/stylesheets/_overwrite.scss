@@ -72,27 +72,30 @@ label {
 }
 
 #footer,
-#footer_line,
-#footer .page_wrapper,
-#second_footer_line {
+#footer .page_wrapper {
     background-color: transparent;
     background-image: none;
 }
-#footer_line {
+#footer .footer_line {
     border-top: 1px dotted #c5c5c5;
-    padding-top:20px;
+    padding-top: 1.5em;
 }
-#second_footer_line > div:first-child {
+#footer .footer_line > div {
     border-right: 1px dotted #c5c5c5;
-    margin-right: 10px;
-}
-.footer_content h3, .footer_content a {
-    color: $primary-color;
-}
-.footer_content a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    h3, a {
+        color: $primary-color;
+    }
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
