@@ -1,0 +1,100 @@
+.static_wrapper {
+    ul#portal-globalnav {
+        list-style: none;
+        margin: 0;
+        border-bottom: 1px solid $primary-color;
+
+        > li {
+            display: inline-block;
+            margin-right: 0.2em;
+
+            a {
+                @include button-base;
+                line-height: 2.5;
+                min-width: 3em;
+                padding: 0 1em;
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+        > li.selected a,
+        > li a:hover,
+        > li a:focus {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+
+    #content-core {
+        margin-bottom: 1em;
+    }
+
+    dl {
+        margin-left: 0;
+    }
+
+    .documentByLine {
+        color: $fg1;
+    }
+    .tileItem {
+        border-bottom: 1px solid $primary-color;
+
+        &:last-child {
+            border-bottom: none;
+        }
+        .tileBody {
+            margin: 1.5em 0;
+        }
+        .tileImage {
+            float: right;
+            margin: 0 0 0.5em 0.5em;
+        }
+        .tileFooter {
+            display: none;
+        }
+    }
+
+    #sidebar {
+        background: none;
+        padding: 0;
+
+        .portlet {
+            border-bottom: 1px solid $primary-color;
+
+            ul, ol {
+                list-style: none;
+                margin: 0;
+
+                > li {
+                    line-height: 2;
+                }
+            }
+            a.tile {
+                // reset
+                color: $primary-color;
+                &:hover, &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .portletHeader {
+            font-size: 120%;
+            font-weight: bold;
+            color: $primary-color;
+            border-bottom: 1px solid $primary-color;
+            margin-bottom: 0.5em;
+        }
+
+       .portletItem {
+            margin: 1em 0.5em 0;
+            padding-bottom: 1em;
+            border-bottom: 1px dotted $border;
+
+            &:lastItem {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}
