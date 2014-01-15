@@ -1,10 +1,14 @@
 .site-youthpart {
-    // overwrite primary-color by youthpart-color (hackish)
     $youthpart-color: #eb651d;
+    $youthpart-blue: #00B5E0;
 
+    // overwrite primary-color by youthpart-color (hackish)
     h1, h2, h3, h4, h5, h6,
     a {
         color: $youthpart-color;
+    }
+    blockquote {
+        border-color: $youthpart-color;
     }
     &.static_wrapper {
         ul#portal-globalnav {
@@ -20,12 +24,9 @@
                 color: white;
             }
         }
-        .tileItem {
-            border-bottom: 1px solid $youthpart-color;
-        }
         #sidebar {
             .portlet {
-                border-bottom: 1px solid $youthpart-color;
+                border-color: $youthpart-color;
 
                 a.tile {
                     color: $youthpart-color;
@@ -33,7 +34,158 @@
              }
             .portletHeader {
                 color: $youthpart-color;
-                border-bottom: 1px solid $youthpart-color;
+                border-color: $youthpart-color;
+            }
+        }
+    }
+
+    &.section-front-page {
+        $badge-size: 5em;
+
+        #projects_teaser_box {
+            @include pie-clearfix;
+            border: 1px solid $youthpart-color;
+            padding: 1em;
+            margin: 40px 0 1em;
+            position: relative;
+            padding-bottom: $badge-size / 4 + 1em;
+
+            &:before {
+                background-image: url(https://ypart-cms.liqd.net/de/youthpart/national/die-projekte.png/@@images/image.png);
+                position: absolute;
+                width: 197px;
+                height: 21px;
+                top: -21px;
+                left: 5px;
+
+                content: "Die Projekte";
+                overflow: hidden;
+                text-indent: 197px;
+            }
+        }
+        h1 {
+            display: inline-block;
+            background-color: $youthpart-blue;
+            color: white;
+            font-size: 120%;
+            padding: 0 0.5em;
+            line-height: 2;
+            @include transform(rotate(-2deg));
+        }
+        #project_teaser_right,
+        #project_teaser_left {
+            display: block;
+            color: inherit;
+            text-decoration: inherit;
+            padding: 1em;
+            margin-top: 1em;
+            padding-bottom: $badge-size / 4 + 1em;
+
+            h3 {
+                margin-top: 0;
+            }
+            &:hover, &:focus {
+                @include background-image(linear-gradient(to bottom, lighten($youthpart-blue, 40%), lighten($youthpart-blue, 55%)));
+            }
+            &:before {
+                display: block;
+                height: 10em;
+                max-width: 100%;
+                background-size: auto 10em;
+                background-repeat: no-repeat;
+                margin-bottom: 1em;
+
+                overflow: hidden;
+                text-indent: 100%;
+            }
+            &:after {
+                display: block;
+                height: $badge-size;
+                width: $badge-size;
+                background-image: url(https://ypart-cms.liqd.net/de/youthpart/beteilige-dich.png/@@images/image.png);
+                background-size: $badge-size;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 1em;
+                bottom: -$badge-size / 4;
+
+                content: "Beteilige Dich!";
+                overflow: hidden;
+                text-indent: $badge-size;
+                white-space: nowrap;
+            }
+        }
+        #project_teaser_right:before {
+            content: "Youthpart#lokal";
+            background-image: url(https://ypart-cms.liqd.net/de/youthpart/youthpart_lokal_logo.png/@@images/image.png);
+        }
+        #project_teaser_left:before {
+            content: "Youthpart";
+            background-image: url(https://ypart-cms.liqd.net/de/youthpart/youthpart_logo.png/@@images/image.png);
+        }
+    }
+    &.section-lokal,
+    &.section-national {
+        $margin: 8%;
+
+        .tileItem {
+            width: (100% - $margin) / 2;
+            float: left;
+
+            &:nth-of-type(odd) {
+                margin-right: $margin;
+                clear: both;
+            }
+            .tileHeadline:first-child {
+                margin-top: 0;
+            }
+            h2 {
+                font-size: 160%;
+            }
+        }
+        .tileImage {
+            width: 100%;
+            height: auto;
+        }
+        .tileFooter a {
+            @include morelink;
+        }
+    }
+
+    &.section-blog {
+        .tileItem {
+            border-bottom: 1px solid $youthpart-color;
+            @include clearfix;
+
+            &:last-child {
+                border-bottom: none;
+            }
+            .tileBody {
+                margin: 1.5em 0;
+            }
+            .tileImage {
+                float: right;
+                margin: 0 0 0.5em 0.5em;
+            }
+            .tileFooter {
+                display: none;
+            }
+        }
+    }
+    &.subsection-saalfeld-moderatoren-und-mentoren {
+        .moderator {
+            clear: both;
+            margin: 2em 0;
+            @include clearfix;
+
+            img {
+                float: left;
+                width: 7em;
+                margin: 0 1em 0 0;
+            }
+            ul {
+                margin: 0;
+                list-style: none;
             }
         }
     }
