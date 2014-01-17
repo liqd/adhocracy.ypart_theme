@@ -39,6 +39,19 @@
         }
     }
 
+    // logoleiste
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+        background-image: url(https://ypart-cms.liqd.net/de/youthpart/logoleiste_partner.jpeg/@@images/image.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        // can't actually know this
+        height: 150px;
+    }
+
     &.section-front-page {
         $badge-size: 5em;
 
