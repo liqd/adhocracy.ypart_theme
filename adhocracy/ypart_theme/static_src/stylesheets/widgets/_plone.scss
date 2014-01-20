@@ -89,6 +89,11 @@
             color: $primary-color;
             border-bottom: 1px solid $primary-color;
             margin-bottom: 0.5em;
+
+            &.titleless {
+                border: none;
+                margin: 0;
+            }
         }
 
        .portletItem {
@@ -96,7 +101,7 @@
             padding-bottom: 1em;
             border-bottom: 1px dotted $border;
 
-            &:lastItem {
+            &:last-child {
                 padding-bottom: 0;
                 border-bottom: none;
             }
