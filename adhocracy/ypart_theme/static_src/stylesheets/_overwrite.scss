@@ -99,27 +99,10 @@ label {
     }
 }
 
-/* override geo.css / startpage stuff */
+/* override geo.css */
 #content-bottom,
 #map_wrapper {
     display:none;
-}
-#content-startpage {
-    background-image: none;
-    background-color: transparent;
-    float: left;
-    height: 342px;
-    width: 984px;
-}
-.global-startpage #main {
-    background-image: url('/static_theme/static/images/gradient_content_startpage.png');
-    background-repeat: repeat-x;
-    height: 400px;
-    margin-top: 54px;
-    margin-bottom: 70px;
-}
-#content-startpage .register {
-    text-align:left;
 }
 #content-top {
     height: auto !important;
@@ -136,4 +119,23 @@ a.participate {
 
 a.new_comment {
     color: $black;
+}
+
+// front page
+#content-startpage {
+    background: none;
+    float: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+
+    img {
+        max-width: 100%;
+    }
+    .cell h2:first-child {
+        margin-top: 0;
+    }
+    .row {
+        margin-top: 3em;
+    }
 }

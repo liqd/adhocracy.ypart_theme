@@ -139,9 +139,6 @@
      <replace content="//li[@id='nav_instances']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
     </rules>
 
-    <!--Content startpage: merge wordpres startpage-->
-    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
-
     <!--Content body and sidebar: aboutpage with merged wordpress-->
     <rules if-path="/_pages/ueber_uns/das-projekt">
       <replace content="//div[@id='main']/attribute::class" ><xsl:attribute name="class">with_wordpress_tabs</xsl:attribute></replace>

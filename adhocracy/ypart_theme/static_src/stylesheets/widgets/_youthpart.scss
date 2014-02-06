@@ -203,21 +203,3 @@
         }
     }
 }
-
-// front page
-.subsection-index-startseite_neu {
-    #col1 {
-        float: none;
-        width: auto;
-
-        img {
-            max-width: 100%;
-        }
-    }
-    .cell h2:first-child {
-        margin-top: 0;
-    }
-    .row {
-        margin-top: 3em;
-    }
-}
