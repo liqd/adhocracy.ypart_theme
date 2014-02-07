@@ -137,34 +137,6 @@
             background-image: url(https://ypart-cms.liqd.net/de/youthpart/youthpart_logo.png/@@images/image.png);
         }
     }
-    &.section-lokal,
-    &.section-national {
-        $margin: 8%;
-
-        .tileItem {
-            width: (100% - $margin) / 2;
-            float: left;
-
-            &:nth-of-type(odd) {
-                margin-right: $margin;
-                clear: both;
-            }
-            .tileHeadline:first-child {
-                margin-top: 0;
-            }
-            h2 {
-                font-size: 160%;
-            }
-        }
-        .tileImage {
-            width: 100%;
-            height: auto;
-        }
-        .tileFooter a {
-            @include morelink;
-        }
-    }
-
     &.section-blog {
         .tileItem {
             border-bottom: 1px solid $youthpart-color;
