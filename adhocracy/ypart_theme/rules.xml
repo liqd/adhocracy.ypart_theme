@@ -10,7 +10,6 @@
   <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_notheme.xml" />
 
   <rules if-content="/html/body/div[@id='main']">
-
     <!-- Head: meta -->
     <drop theme="/html/head/meta" if-content="/html/head/meta"/>
     <prepend theme="/html/head" content="/html/head/meta" />
@@ -23,6 +22,9 @@
     <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
     <drop theme="/html/head/script" if-content="/html/head/script"/>
     <append theme="/html/head" content="/html/head/script" />
+    <append theme="/html/head">
+    	<script type="text/javascript" src="/static_theme/static/javascripts/toc.js"></script>  
+    </append>
     <append theme="/html/head" content="/html/head/style" />
     <!-- RSS -->
     <replace theme="/html/head/link[contains(@type, 'application/rss+xml')]" content="/html/head/link[contains(@type, 'application/rss+xml')]" />
