@@ -1,0 +1,41 @@
+.site-planeteurope {
+    $planeteurope-color: #267fff;
+    $planeteurope-blue: #00B5E0;
+
+    // overwrite primary-color by planeteurope-color (hackish)
+    h1, h2, h3, h4, h5, h6,
+    a {
+        color: $planeteurope-color;
+    }
+    blockquote {
+        border-color: $planeteurope-color;
+    }
+    &.static_wrapper {
+        ul#portal-globalnav {
+            border-color: $planeteurope-color;
+
+            > li a {
+                color: $planeteurope-color;
+            }
+            > li.selected a,
+            > li a:hover,
+            > li a:focus {
+                background-color: $planeteurope-color;
+                color: white;
+            }
+        }
+        #sidebar {
+            .portlet {
+                border-color: $planeteurope-color;
+
+                a.tile {
+                    color: $planeteurope-color;
+                }
+             }
+            .portletHeader {
+                color: $planeteurope-color;
+                border-color: $planeteurope-color;
+            }
+        }
+    }
+}
