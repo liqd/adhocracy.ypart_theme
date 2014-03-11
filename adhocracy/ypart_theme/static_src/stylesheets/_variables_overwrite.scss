@@ -1,6 +1,6 @@
 $primary-color: #134d7f;
 $button-color: $primary-color;
 $register-color: $button-color;
-$header-color: #081945;
-$header-color2: #20315D;
+$header-color: adjust-hue(saturate(darken($primary-color, 13.5%), 5%), 15deg);
+$header-color2: desaturate(lighten($header-color, 9.4%), 30%);
 $fg1: #666;
