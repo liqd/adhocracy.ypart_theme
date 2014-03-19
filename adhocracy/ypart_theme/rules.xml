@@ -23,7 +23,7 @@
     <drop theme="/html/head/script" if-content="/html/head/script"/>
     <append theme="/html/head" content="/html/head/script" />
     <append theme="/html/head">
-    	<script type="text/javascript" src="/static_theme/static/javascripts/toc.js"></script>  
+        <script type="text/javascript" src="/static_theme/static/javascripts/toc.js"></script>
     </append>
     <append theme="/html/head" content="/html/head/style" />
     <!-- RSS -->
@@ -43,6 +43,7 @@
 
     <!--Body-->
     <replace theme="/html/body" content="/html/body" />
+    <merge attributes="class" css:theme="html" css:content="html" />
 
     <!--Logo and Topnav-->
       <!-- if body.compact -->
