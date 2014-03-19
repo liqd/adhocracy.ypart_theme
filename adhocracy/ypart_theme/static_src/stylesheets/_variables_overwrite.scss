@@ -3,4 +3,5 @@ $button-color: $primary-color;
 $register-color: $button-color;
 $header-color: adjust-hue(saturate(darken($primary-color, 13.5%), 5%), 15deg);
 $header-color2: desaturate(lighten($header-color, 9.4%), 30%);
+$heading-color: $header-color;
 $fg1: #666;
