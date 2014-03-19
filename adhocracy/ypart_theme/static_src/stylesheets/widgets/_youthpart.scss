@@ -2,57 +2,59 @@
     $youthpart-color: #eb651d;
     $youthpart-blue: #00B5E0;
 
-    // overwrite primary-color by youthpart-color (hackish)
-    h1, h2, h3, h4, h5, h6,
-    a {
-        color: $youthpart-color;
-    }
-    blockquote {
-        border-color: $youthpart-color;
-    }
-    &.static_wrapper {
-        ul#portal-globalnav {
-            border-color: $youthpart-color;
-
-            > li a {
-                color: $youthpart-color;
-            }
-            > li.selected a,
-            > li a:hover,
-            > li a:focus {
-                background-color: $youthpart-color;
-                color: white;
-            }
+    #main .page_wrapper {
+        // overwrite primary-color by youthpart-color (hackish)
+        h1, h2, h3, h4, h5, h6,
+        a {
+            color: $youthpart-color;
         }
-        #sidebar {
-            .portlet {
+        blockquote {
+            border-color: $youthpart-color;
+        }
+        .static_wrapper {
+            ul#portal-globalnav {
                 border-color: $youthpart-color;
 
-                a.tile {
+                > li a {
                     color: $youthpart-color;
                 }
-             }
-            .portletHeader {
-                color: $youthpart-color;
-                border-color: $youthpart-color;
+                > li.selected a,
+                > li a:hover,
+                > li a:focus {
+                    background-color: $youthpart-color;
+                    color: white;
+                }
             }
+            #sidebar {
+                .portlet {
+                    border-color: $youthpart-color;
+
+                    a.tile {
+                        color: $youthpart-color;
+                    }
+                 }
+                .portletHeader {
+                    color: $youthpart-color;
+                    border-color: $youthpart-color;
+                }
+            }
+        }
+
+        // logoleiste
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+            background-image: url(https://ypart-cms.liqd.net/de/youthpart/logoleiste.jpeg/@@images/image.jpeg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            // can't actually know this
+            height: 150px;
         }
     }
 
-    // logoleiste
-    &:after {
-        content: "";
-        display: block;
-        clear: both;
-        background-image: url(https://ypart-cms.liqd.net/de/youthpart/logoleiste.jpeg/@@images/image.jpeg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-
-        // can't actually know this
-        height: 150px;
-    }
-
-    &.section-front-page {
+    &.section-front-page #main .page_wrapper {
         $badge-size: 5em;
 
         #projects_teaser_box {
@@ -137,7 +139,7 @@
             background-image: url(https://ypart-cms.liqd.net/de/youthpart/youthpart_logo.png/@@images/image.png);
         }
     }
-    &.section-blog {
+    &.section-blog #main .page_wrapper {
         .tileItem {
             border-bottom: 1px solid $youthpart-color;
             @include clearfix;
@@ -157,7 +159,7 @@
             }
         }
     }
-    &.subsection-saalfeld-moderatoren-und-mentoren {
+    &.subsection-saalfeld-moderatoren-und-mentoren #main .page_wrapper {
         .moderator {
             clear: both;
             margin: 2em 0;
