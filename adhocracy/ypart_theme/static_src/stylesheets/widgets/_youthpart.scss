@@ -141,11 +141,23 @@
     }
     &.section-blog #main .page_wrapper {
         .tileItem {
+            // reset
+            width: auto;
+            float: none;
+            margin: 0;
+
+            .tileHeadline {
+                margin-top: 0.8em;
+            }
+
             border-bottom: 1px solid $youthpart-color;
             @include clearfix;
 
             &:last-child {
                 border-bottom: none;
+            }
+            .tileHeadline {
+                text-transform: uppercase;
             }
             .tileBody {
                 margin: 1.5em 0;
