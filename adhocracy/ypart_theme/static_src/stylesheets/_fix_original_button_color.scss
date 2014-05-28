@@ -2,7 +2,7 @@
 
 $button-color-orig: #888;
 
-#sidebar_nav {
+html #sidebar_nav {
     ul {
         background-color: lighten($button-color-orig, 3%);
         @include background-image(linear-gradient(top left, lighten($button-color-orig, 14%), lighten($button-color-orig, 3%)));
