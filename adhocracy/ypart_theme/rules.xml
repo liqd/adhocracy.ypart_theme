@@ -6,6 +6,71 @@
 
   <theme href="theme.html" />
 
+  <replace css:content="#content-startpage .oembed-video iframe">
+    <style>
+      .oembed-video .preview {
+        position: relative;
+        display: block;
+        display: inline-block;
+      }
+      .oembed-video .preview img {
+        display: block;
+        display: inline-block;
+      }
+      .oembed-video .preview:after,
+      .oembed-video .preview:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .oembed-video .preview:after {
+        width: 0;
+        height: 0;
+        border-left: 2em solid white;
+        border-right: 0;
+        border-top: 1em solid transparent;
+        border-bottom: 1em solid transparent;
+        margin-left: -1em;
+        margin-top: -1em;
+      }
+      .oembed-video .preview:before {
+        width: 6em;
+        height: 4em;
+        margin-left: -3em;
+        margin-top: -2em;
+        border-radius: 0.5em;
+        background: #134d7f;
+        opacity: 0.8;
+      }
+      .oembed-video .preview:hover:before {
+        opacity: 1;
+      }
+    </style>
+    <xsl:element name="a">
+      <xsl:attribute name="href"><xsl:value-of select="@src" /></xsl:attribute>
+      <xsl:attribute name="onclick">
+        <xsl:text><![CDATA[
+        var self = $(this);
+        var img = self.find('img');
+        var iframe = $('<iframe allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" frameborder="0">')
+          .attr('width', img.attr('width'))
+          .attr('height', img.attr('height'))
+          .attr('src', self.attr('href'));
+        self.replaceWith(iframe);
+        return false;
+        ]]></xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="class">preview</xsl:attribute>
+      <xsl:element name="img">
+        <xsl:attribute name="width"><xsl:value-of select="@width" /></xsl:attribute>
+        <xsl:attribute name="height"><xsl:value-of select="@height" /></xsl:attribute>
+        <xsl:attribute name="alt">Click here to load video!</xsl:attribute>
+        <xsl:attribute name="src">/static_theme/static/images/ypart-video-preview.png</xsl:attribute>
+      </xsl:element>
+    </xsl:element>
+  </replace>
+
   <!--do not theme ajax requests-->
   <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_notheme.xml" />
 
