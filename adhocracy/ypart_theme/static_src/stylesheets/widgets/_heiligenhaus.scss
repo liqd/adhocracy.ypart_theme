@@ -1,0 +1,78 @@
+$heiligenhaus-red: #d91e48;
+$heiligenhaus-green: #5ba346;
+$heiligenhaus-blue: #006cb6;
+
+.site-heiligenhaus {
+    #main .page_wrapper {
+        h1, h2, h3, h4, h5, h6 {
+            color: $heiligenhaus-red;
+        }
+
+        a {
+            color: $heiligenhaus-green;
+
+            &:hover, &:focus, &:active {
+                color: $heiligenhaus-blue;
+            }
+        }
+
+        .static_wrapper ul#portal-globalnav > li a {
+            color: $heiligenhaus-green;
+
+            &:hover, &:focus, &:active {
+                color: white;
+                background-color: $heiligenhaus-blue;
+            }
+        }
+
+        .cover-banner-tile img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cover-richtext-tile {
+            margin-bottom: 2em;
+
+            .tileHeadline {
+                font-size: 160%;
+                margin-top: 0.5em;
+            }
+            .tileBody {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.section-blog #main .page_wrapper {
+        .tileItem {
+            // reset
+            width: auto;
+            float: none;
+            margin: 0;
+
+            .tileHeadline {
+                margin-top: 0.8em;
+            }
+
+            border-bottom: 1px solid $heiligenhaus-red;
+            @include clearfix;
+
+            &:last-child {
+                border-bottom: none;
+            }
+            .tileHeadline {
+                text-transform: uppercase;
+            }
+            .tileBody {
+                margin: 1.5em 0;
+            }
+            .tileImage {
+                float: right;
+                margin: 0 0 0.5em 0.5em;
+            }
+            .tileFooter {
+                display: none;
+            }
+        }
+    }
+}
