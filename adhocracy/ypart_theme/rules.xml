@@ -89,6 +89,7 @@
     <append theme="/html/head" content="/html/head/script" />
     <append theme="/html/head">
         <script type="text/javascript" src="/static_theme/static/javascripts/toc.js"></script>
+        <script type="text/javascript" src="/static_theme/static/javascripts/video.js"></script>
     </append>
     <append theme="/html/head" content="/html/head/style" />
     <!-- RSS -->
