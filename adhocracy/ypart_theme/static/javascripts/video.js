@@ -32,5 +32,7 @@
 
     $(document).ready(function() {
         embedVideos('.proposal');
+        embedVideos('.comment');
+        embedVideos('.instance_description');
     });
 })();
